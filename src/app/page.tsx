@@ -1,95 +1,52 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Link from "next/link";
+import Navbar from "./components/Header";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+    <div className="container">
+      <img 
+        src="https://www.limelight.pk/cdn/shop/files/Cambric-Unstitched.jpg?v=1728534904" 
+        alt="Women Wear" 
+        className="centered-image" 
+      />
+      <br />
+      <h1 className="text-center text-4xl decoration-double">Women Wear</h1>
+      <br />
+      <img 
+        src="https://www.limelight.pk/cdn/shop/files/eastern_tops_8ec740e5-d124-4d3b-9d97-3d300b20a667_300x.png?v=1722245388" 
+        alt="Eastern Tops" 
+        className="centered-image" 
+      />
+      <br />
+      <img 
+        src="https://www.limelight.pk/cdn/shop/files/dailywear_5e709826-db47-41b8-b0e4-0bc3a84a343f_300x.png?v=1722244654" 
+        alt="Daily Wear" 
+        className="centered-image" 
+      />
+      <br />
+      <img 
+        src="https://www.limelight.pk/cdn/shop/files/Unstitched_300x300_17c8fa10-87ff-4ef7-b344-de5ab26aa340_300x.png?v=1728026205" 
+        alt="Unstitched Dress" 
+        className="centered-image" 
+      />
+      <br />
+      <img 
+        src="https://www.limelight.pk/cdn/shop/files/P9329SU-SML-143_5_3PieceCottonNetSuit-Embroidered_Pret_330x.jpg?v=1728996329" 
+        alt="Cotton Net Suit" 
+        className="centered-image" 
+      />
+      <br />
+      <img 
+        src="https://www.limelight.pk/cdn/shop/files/P9239SE-SML-227_1_-2PieceOrganzaSaree-Embroidered_Pret_330x.jpg?v=1727521454" 
+        alt="Organza Saree" 
+        className="centered-image" 
+      />
+      <br />
+      <img 
+        src="https://www.limelight.pk/cdn/shop/files/A0666ST-SML-374_6_-GripCo-OrdSet-Printed_Pret_330x.jpg?v=1726640265" 
+        alt="Co-Ord Set" 
+        className="centered-image" 
+      />
     </div>
   );
 }
